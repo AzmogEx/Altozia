@@ -1,0 +1,119 @@
+language: "en-US"
+# length of a single chunk
+# this value is required to be a power of 2 (2^n)
+# changing after the server already initialized the chunk universe will shift the size of all chunks and should only be done with caution
+chunk-size: 16
+# change the name of the command
+# if this value gets changed it is required to also change the command name in the plugin.yml [important!]
+# [right-click on the plugin.jar -> WinRar/7-Zip -> open -> select plugin.yml]
+# aliases can be changed in the plugin.yml too
+command: faction
+help-page-size: 8
+# tooltips are short tip messages that are sent to the user to give him some hints
+tooltips:
+  enabled: true
+chat:
+  # set to false if you don't want to use the integrated chat module
+  enabled: true
+  # gets formatted with [faction, player, message]
+  self: '&8[&a%s&8] &7%s &8> &f%s'
+  ally: '&8[&9%s&8] &7%s &8> &f%s'
+  truce: '&8[&e%s&8] &7%s &8> &f%s'
+  neutral: '&8[&c%s&8] &7%s &8> &f%s'
+  # gets formatted with [player, message]
+  none: '&8[] &7%s &8> &f%s'
+  # gets formatted with the [channel, relation-format]
+  channelFormat: "&c%s &8| %s"
+faction:
+  name:
+    # set to true if you want to allow only ASCII characters a faction name
+    onlyCharacters: true
+    # maximum length of the factions name
+    maxLength: 16
+  creation:
+    # amount of money a player needs to create a faction
+    cost: 0
+  claim:
+    # list of worlds where a player can't claim a faction chunk
+    blacklistedWorlds:
+      - world_nether
+      - world_the_end
+    # start price to claim the first x chunks
+    # can be set to 0 if you want to disable costs of chunks
+    price: 100
+    # every x claims the price gets multiplied by the multiplier
+    # (!) don't set to 0
+    priceStreak: 5
+    # multiplier that multiplies the streak with the price
+    # (!) don't set to 0
+    multiplier: 1.5
+    # set to false if players should be able to claim chunks that are not connected to each other
+    connected: true
+    # set to true if you want to enable titles if a player enters or leaves a faction territory
+  territoryTitle: true
+  # power a faction gains when a player joins the faction
+  playerPower: 5
+  warp:
+    # set to true if players should be allowed to set a warp outside the faction territory
+    outsideChunk: false
+power:
+  # amount of power that will be regenerated every #increaseTime seconds
+  # for each faction
+  increase: 5.0
+  # time in seconds
+  increaseTime: 300
+  # power a faction will generate if a player kills another player
+  increaseOnKill: 1.25
+  # power a faction will lose if a player gets killed
+  decreaseOnDeath: 1.25
+teleport:
+  # fallback teleport delay in ticks (20 ticks = 1 second)
+  delay: 60
+  # set to true if you want to disable enemy teleports in faction territory
+  # (blocks every teleportation)
+  blockEnemy: true
+map:
+  # default size of the map
+  # is required to be an odd number
+  width: 17
+  height: 17
+siege:
+  # power a faction has to hit to be besieged
+  # every power value that is less than or equal to this value will make the faction
+  # siege-able
+  neededPower: 0
+  # time in seconds
+  # in this time the besieging faction gets all permissions in the
+  # besieged factions claims
+  siegeTime: 300
+  # time in seconds
+  # time the besieged faction is unsiegable after a siege
+  graceTime: 300
+  # amount of players of a besieged faction that has to be online
+  # to start a siege
+  minPlayersOnline: 2
+fly:
+  # time in seconds
+  # if a player leaves a faction chunk while enabled /f fly
+  # fly will be deactivated after this amount of time
+  leaveTime: 3
+gui:
+  # enter the name of a material
+  # this material will fill each empty space around an item in any gui that is created by the plugin
+  # set to 'null' if you don't want to use any item
+  fillItem: 'BLACK_STAINED_GLASS_PANE'
+display:
+  scoreboard:
+    # set to true if you want to enable the sidebar
+    enabled: true
+  tablist:
+    # set to true if you want to enable tablist header and footers
+    enabled: true
+zones:
+  safezone:
+    # here you can set blocks that users can interact with in a safe zone
+    # put item names here
+    interact:
+      - "FURNACE"
+      - "ENCHANTING_TABLE"
+      - "ANVIL"

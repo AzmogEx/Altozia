@@ -1,0 +1,858 @@
+language-name: 'English'
+locale: 'en-US'
+# SHORT is completely numeric, such as 12.13.52 or 3:30pm
+# MEDIUM is longer, such as Jan 12, 1952
+# LONG is longer, such as January 12, 1952 or 3:30:32pm
+# FULL is pretty completely specified, such as Tuesday, April 8, 1952 AD or 3:30:42pm PST.
+date-style: 'short'
+timeunit-millisecond: 'ms'
+timeunit-millisecond-name: 'millisecond'
+timeunit-milliseconds-name: 'milliseconds'
+timeunit-second: 's'
+timeunit-second-name: 'second'
+timeunit-seconds-name: 'seconds'
+timeunit-minute: 'm'
+timeunit-minute-name: 'minute'
+timeunit-minutes-name: 'minute'
+timeunit-hour: 'h'
+timeunit-hour-name: 'hour'
+timeunit-hours-name: 'hours'
+timeunit-day: 'd'
+timeunit-day-name: 'day'
+timeunit-days-name: 'days'
+no-value-code: 'N/A'
+teleport-permission-error: '&cYou are not permitted to teleport in this area!'
+server-restarting: '&c&lServer is restarting'
+not-permitted: '&cYou are not permitted to perform this action!'
+not-enough-money: '&cYou don''t have enough money to do that!'
+not-in-faction-self: '&cYou are not in a faction!'
+already-in-faction-other: '&cThis player is already in a faction!'
+already-in-faction-self: '&cYou are already in a faction!'
+faction-not-found: '&cThis faction could not be found!'
+# <player> is replaced by the name of the player
+player-not-found: '&cPlayer &e<player> &ccould not be found!'
+player-not-in-your-faction: '&cThis player is not in your faction!'
+faction-default-description: 'My own faction'
+faction-not-enough-money: '&cYour faction does not have enough money to perform that!'
+# <faction> is replaced by the name of the faction who owns the territory
+territory-change-faction: '&aEntered territory of &e<faction>'
+territory-change-wilderness: '&aEntered wilderness'
+territory-enter-zone-safe-zone: '&aEntered &esafe zone'
+territory-enter-zone-war-zone: '&aEntered &cwar zone'
+relation-type-self: 'Own Faction'
+relation-type-enemy: 'Enemy'
+relation-type-ally: 'Ally'
+relation-type-truce: 'Truce'
+chatmode-public: 'PUBLIC'
+chatmode-faction: 'FACTION'
+chatmode-ally: 'ALLY'
+chatmode-truce: 'TRUCE'
+# multiple lines with '%n'
+# <x> is replaced by the chunks x-coordinate
+# <z> is replaced by the chunks z-coordinate
+# <faction> is replaced by the name of the faction who owns the chunk
+# <description> is replaced by the description of the faction
+faction-map-tile-description: '<faction>%n&7<description>%n&7x&8: &a<x>&8, &7z&8: &a<z>'
+# multiple lines with '%n'
+# <x> is replaced by the chunks x-coordinate
+# <z> is replaced by the chunks z-coordinate
+faction-map-tile-unclaimed-description: '&7x&8: &a<x>&8, &7z&8: &a<z>'
+# multiple lines with '%n'
+# <x> is replaced by the chunks x-coordinate
+# <z> is replaced by the chunks z-coordinate
+faction-map-tile-border-description: '&7x&8: &a<x>&8, &7z&8: &a<z>'
+# multiple lines with '%n'
+# <x> is replaced by the chunks x-coordinate
+# <z> is replaced by the chunks z-coordinate
+faction-map-tile-safe-zone-description: '&7x&8: &a<x>&8, &7z&8: &a<z>'
+# multiple lines with '%n'
+# <x> is replaced by the chunks x-coordinate
+# <z> is replaced by the chunks z-coordinate
+faction-map-tile-war-zone-description: '&7x&8: &a<x>&8, &7z&8: &a<z>'
+faction-map-border: 'Border'
+faction-map-wilderness: 'Wilderness'
+# <legend> is replaced by the current legend
+faction-map-legend: '&aLegend&8: <legend>'
+placeholder-not-found: 'N/A'
+teleportation-aborted: '&cTeleportation aborted'
+chunk-state-faction: 'Faction'
+chunk-state-safe-zone: 'Safe Zone'
+chunk-state-war-zone: 'War Zone'
+# <value> is replaced by the invalid value
+command-invalid-number: '&c<value> is not a valid number'
+command-faction-help: '&7Main Command'
+command-help-help: '&7Help Command'
+command-help-page-not-found: '&cPage not found!'
+# <page> is replaced by the current page
+# <pages> is replaced by the page count
+command-help-header: '     &c&lFACTION COMMANDS &8[&6<page>&7/&c<pages>&8]'
+command-chat-help: '&7Toggle chatmode'
+# <modes> is replaced by all possible chat modes
+command-chatmode-invalid: '&cInvalid chatmode! Possible modes are: &e<modes>'
+# <mode> is replaced by the new chatmode
+command-chatmode-success: '&aSuccessfully switched chatmode to &e<mode>'
+command-create-help: '&7Creates a faction'
+command-create-already-in-faction: '&cYou are already in a faction!'
+command-create-faction-already-exists: '&cThis faction does already exist!'
+# <value> is replaced by the maximum length of the name
+command-create-invalid-length: '&cYou can''t name your faction longer than &e<value> &ccharacters!'
+# <cost> is replaced by the creation cost
+command-create-success-costs: '&aSuccessfully created faction &e<name> &afor &e<cost>'
+# <name> is replaced by the name of the created faction
+command-create-success: '&aSuccessfully created faction &e<name>'
+command-claim-help: '&7Claims a chunk'
+command-claimat-help: '&7Claims a chunk at a specific position'
+command-claim-invalid-world: '&cYou can''t claim a chunk in this world!'
+command-claim-max-size: '&cYou can''t claim more chunks! You''r faction has already reached the maximum amount of claims!'
+# <faction> is replaced by the name of the faction who owns this chunk
+command-claim-already-claimed: '&cYou can''t claim this chunk! Its already claimed by faction &e<faction>&c!'
+command-claim-not-connected: '&cThis chunk is not connected to your faction!'
+# <chunk-x> is replaced by the chunks x-coordinate
+# <chunk-z> is replaced by the chunks z-coordinate
+command-claim-success: '&aSuccessfully claimed chunk at &e<chunk-x>&7;&e<chunk-z>&a!'
+command-claim-error: '&cYou can''t claim this chunk!'
+command-chunksee-help: '&7Shows the chunk border'
+command-chunksee-enabled: '&aYou can now see chunks!'
+command-chunksee-disabled: '&eYou can no longer see chunks!'
+command-chest-help: '&7Open the faction chest'
+command-chest-error: '&cYour faction has not unlocked the chest yet!'
+command-disband-help: '&7Disband your faction'
+command-disband-error: '&cCould not disband faction.. It is maybe deleted already. Please check or try again later'
+command-disband-success: '&aSuccessfully disbanded faction'
+command-disband-success-other: '&cYour faction got disbanded! You are &lnot &r&clonger in a faction'
+command-invite-help: '&7Invites a player to your faction'
+# <player> is replaced by the name of the player
+command-invite-success: '&aSuccessfully invited &e<player>&a!'
+command-invite-ignored-error: '&cThe player is ignoring your faction invites!'
+# <faction> is replaced by the name of the faction
+command-invite-received: '&aYou''ve got invited to join faction &e<faction>&a'
+# <player> is replaced by the name of the player
+command-invite-already-invited: '&cYour faction has already invited the player &e<player>'
+# <faction> is replaced by the name of the faction
+command-invite-hover: '&7/f join faction &e<faction>'
+command-invite-click: ' &aClick to join the faction!'
+command-join-help: '&7Accepts an faction invite'
+# <faction> is replaced by the name of the faction
+command-join-no-invites: '&cYou have no invites from faction &e<faction>'
+# <faction> is replaced by the name of the faction
+command-join-success: '&aSuccessfully joined faction &e<faction>'
+# <player> is replaced by the name of the player
+command-join-success-other: '&aPlayer &e<player> &ajoined your faction!'
+command-unclaim-help: '&7Unclaims a faction chunk'
+command-unclaim-not-claimed: '&cYou can''t unclaim this chunk! It is not claimed!'
+# <faction> is replaced by the name of the faction who owns this chunk
+command-unclaim-not-your-chunk: '&cThis chunk is not yours! It belongs to faction &e<faction>&c!'
+command-unclaim-success: '&aSuccessfully unclaimed chunk!'
+command-unclaim-not-connected: '&cThis chunk cannot be unclaimed, as this would leave other chunks unconnected!'
+command-rename-help: '&7Sets a new name for your faction'
+# <name> is replaced by the new name of the faction
+command-rename-success: '&aSuccessfully renamed your faction to &e<name>&a!'
+command-description-help: '&7Changes your factions description'
+command-description-success: '&aSuccessfully changed your factions description!'
+command-setwarp-help: '&7Sets a faction warp with optional password'
+# <warp> is replaced by the name of the warp
+command-setwarp-already-exists: '&cThe warp &e<warp> &cdoes already exist!'
+command-setwarp-outside-error: '&cYou can''t set a warp outside your faction territory'
+# <warp> is replaced by the name of the warp
+command-setwarp-success: '&aSuccessfully set warp &e<warp>&a!'
+command-setwarp-size-error: '&cYour faction has reached the maximum amount of warps. You have to upgrade your faction to create more warps!'
+command-warp-help: '&7Teleport to the specific warp'
+# <warp> is replaced by the given argument
+command-warp-not-found: '&cWarp &4<warp> &cnot found!'
+# <warp> is replaced by the name of the warp
+command-warp-invalid-password: '&cInvalid password!'
+# <warp> is replaced by the name of the warp
+command-warp-teleport: '&aStarting teleportation ...'
+command-leave-help: '&7Leaves your faction'
+command-leave-success: '&aSuccessfully left faction &e<faction>&a!'
+# <player> is replaced by the name of the player
+command-leave-success-other: '&e<player> &cleft your faction!'
+command-leave-leader-error: '&cYou can''t leave the faction! You are the leader!'
+command-ignore-help: '&7Ignore the faction invites'
+# <faction> is replaced by the name of the faction
+command-ignore-already-ignored: '&cYou are already ignoring faction &e<faction>&c!'
+# <faction> is replaced by the name of the faction
+command-ignore-success: '&aYou are now ignoring faction &e<faction>&a!'
+command-ignores-help: '&7Opens a GUI with all of your ignored factions'
+command-unignore-help: '&7Removes a faction from your ignores list'
+# <faction> is replaced by the name of the faction
+command-unignore-success: '&aSuccessfully removed &e<faction> &afrom your ignore list!'
+# <faction> is replaced by the name of the faction
+command-unignore-not-found: '&cYou are not ignoring faction &e<faction>'
+command-info-help: '&7Shows your factions informations'
+command-ranks-help: '&7Shows your factions ranks'
+command-settings-help: '&7Change some default values of your faction'
+command-uninvite-help: '&7Revoke an faction invite'
+# <player> is replaced by the name of the player
+command-uninvite-not-invited: '&cYour faction has not invited the player &e<player>&c!'
+command-uninvite-success: '&aSuccessfully revoked invite!'
+command-setrank-help: '&7Sets a players faction rank'
+command-setrank-higher-error: '&cThis player has a higher or the same rank as you! You can''t change it''s rank!'
+# <player> is replaced by the name of the player
+# <faction> is replaced by the name of the faction
+command-setrank-success: '&aSuccessfully changed rank of &e<player> &ato &e<rank>&a!'
+# <rank> is replaced by the name of the rank
+command-setrank-success-other: '&aYou''r rank has got changed to &e<rank>&a!'
+command-setrank-self-error: '&cYou can''t change your own rank!'
+command-ally-help: '&7Adds an faction to your ally'
+command-relations-self-error: '&cYou can''t start a relation with yourself!'
+# <faction> is replaced by the name of the faction
+# <type> is replaced by the type of the relation
+command-relations-already-related: '&cYou already have an &e<type> &crelation with faction &e<faction>'
+# <faction> is replaced by the name of the faction
+# <type> is replaced by the type of the relation
+command-relations-already-sent: '&cYou''ve already sent an relation request &8(&e<type>&8)&c to faction &e<faction>'
+# <faction> is replaced by the name of the faction
+# <type> is replaced by the type of the relation
+command-relations-success-other: '&aYour factions is now in an &e<type> &arelation with faction &e<faction>&a!'
+command-relations-success-sent: '&aSuccessfully sent a relation request!'
+# <faction> is replaced by the name of the faction who sent the request
+command-relations-ally-success-sent-other: '&aFaction &e<faction> &awants to start an &ealliance with you! Type &e/f ally <faction> &ato accept it.'
+command-map-help: '&7Shows a map of the surrounding chunks'
+command-mapsize-help: '&7Change the size of the map'
+# <value> is replaced by the invalid width
+command-mapsize-invalid-width: '&cWidth is required to be an odd number'
+# <value> is replaced by the invalid height
+command-mapsize-invalid-height: '&cHeight is required to be an odd number'
+# <width> is replaced by the new width
+# <height> is replaced by the new height
+command-mapsize-success: '&aMap size set to &e<width>&8×&e<height>'
+command-list-help: '&7Opens a GUI with all factions'
+command-kick-help: '&7Kicks a player out of your faction'
+# <player> is replaced by the name of the player
+command-kick-success: '&aSuccessfully kicked player &e<player>'
+command-kick-success-other: '&cYou''ve got kicked out of your faction!'
+command-kick-rank-error: '&cYou can''t kick this player, he has a higher rank than you!'
+command-kick-self-error: '&cYou can''t kick yourself!'
+command-truce-help: '&7Adds a faction to your truces'
+# <faction> is replaced by the name of the faction
+command-truce-success: '&aYour faction is now in truce with faction &e<faction>&a!'
+command-enemy-help: '&7Adds a faction to your enemies'
+# <faction> is replaced by the name of the faction
+command-enemy-success: '&aYour faction is now in war with faction &e<faction>&a!'
+# <faction> is replaced by the name of the faction
+command-enemy-other: '&cFaction &e<faction> &cadded your faction to their enemies!'
+command-neutral-help: '&7Removes any relations with a faction'
+# <faction> is replaced by the name of the faction
+command-neutral-success: '&aYour faction is now not longer related with faction &e<faction>&a!'
+# <faction> is replaced by the name of the faction
+command-neutral-other: '&cFaction &e<faction> &cremoved all relations with your faction!'
+# <faction> is replaced by the name of the faction
+command-neutral-no-relation: '&cYou have no relation with faction &e<faction>&c!'
+command-set-home-help: '&7Sets your faction home'
+command-set-home-exists: '&cYour faction home does already exist!'
+command-set-home-success: '&aSuccessfully set your faction home!'
+command-set-home-outside-error: '&cYou can''t set your home outside of your faction territory!'
+command-promote-help: '&7Promotes a player to the new faction leader'
+# <player> is replaced by the name of the player
+command-promote-success: '&aSuccessfully promoted &e<player> &ato the new faction leader!'
+command-promote-success-other: '&aYou''ve got promoted as new faction leader!'
+command-promote-self-error: '&cYou are already leader!'
+command-bank-help: '&7Shows your factions balance'
+# multiple lines with '%n'
+# <balance> is replaced by the balance of the faction
+command-bank-info: '&8&m               %n&6&lFaction Bank: &e<balance>%n&8&m               '
+command-withdraw-help: '&7Withdraw money into the faction bank'
+command-withdraw-amount-error: '&cYour faction does not have enough money to withdraw that amount!'
+# <amount> is replaced by the withdrawn balance
+command-withdraw-success: '&aSuccessfully withdrawn &e<amount>'
+command-deposit-help: '&7Deposit money into the factions bank'
+command-deposit-amount-error: '&cYou don''t have enough money!'
+# <amount> is replaced by the deposited balance
+# <balance> is replaced by the new balance
+command-deposit-success: '&aSuccessfully deposit &e<amount>&a. New Balance: &e<balance>'
+command-upgrade-help: '&7Upgrades your faction level'
+command-home-help: '&7Teleports you to your faction home'
+command-home-not-found: '&cThe faction home is not set yet!'
+# <time> is replaced by the time until the player gets teleported
+command-home-started: '&aYou will get teleported in &e<time> &aseconds. Do not move!'
+command-home-success: '&aSuccessfully teleported to your faction home!'
+command-fly-help: '&7Toggles fly mode inside your faction territory'
+command-fly-chunk-error: '&cYou have to be in a faction chunk!'
+command-fly-level-error: '&cYour faction has not unlocked faction fly yet!'
+# <time> is replaced by the allowed fly time in seconds
+command-fly-leave-warn: '&cYou left your territory! Fly will be deactivated in &e<time> &cseconds!'
+command-fly-enabled: '&aEnabled fly mode!'
+command-fly-disabled: '&cDisabled fly mode!'
+command-fly-siege-error: '&cYou can''t fly while your faction is besieged!'
+command-language-help: '&7Change your language'
+command-safezone-help: '&7Edit the safe-zone'
+command-safezone-add-help: '&7Add this chunk to the safe-zone'
+# <chunk-x> is replaced by the chunks x-coordinate
+# <chunk-z> is replaced by the chunks z-coordinate
+command-safezone-add-success: '&aSuccessfully added chunk at &e<chunk-x>&7;&e<chunk-z> &ato the safe-zone!'
+# <count> is replaced by the number of the added chunks
+command-safezone-add-bulk-success: '&aSuccessfully added &e<count> &achunks to the safe-zone!'
+command-safezone-add-error: '&cThis chunk is already part of the safe-zone!'
+command-safezone-remove-help: '&7Remove this chunk from the safe-zone!'
+command-safezone-remove-success: '&aSuccessfully removed this chunk from the safe-zone!'
+# <count> is replaced by the number of the removed chunks
+command-safezone-remove-bulk-success: '&aSuccessfully removed &e<count> &achunks from the safe-zone!'
+command-safezone-remove-error: '&cThis chunk is not part of the safe-zone!'
+command-warzone-help: '&7Edit the war-zone'
+command-warzone-add-help: '&7Add this chunk to the war-zone'
+# <chunk-x> is replaced by the chunks x-coordinate
+# <chunk-z> is replaced by the chunks z-coordinate
+command-warzone-add-success: '&aSuccessfully added chunk at &e<chunk-x>&7;&e<chunk-z> &ato the war-zone!'
+# <count> is replaced by the number of the added chunks
+command-warzone-add-bulk-success: '&aSuccessfully added &e<count> &achunks to the war-zone!'
+command-warzone-add-error: '&cThis chunk is already part of the war-zone!'
+command-warzone-remove-help: '&7Remove this chunk from the war-zone!'
+command-warzone-remove-success: '&aSuccessfully removed this chunk from the war-zone!'
+# <count> is replaced by the number of the removed chunks
+command-warzone-remove-bulk-success: '&aSuccessfully removed &e<count> &achunks from the war-zone!'
+command-warzone-remove-error: '&cThis chunk is not part of the war-zone!'
+command-siege-help: '&7Starts a siege'
+command-siege-self-error: '&cYou can''t start a siege with your own faction!'
+command-siege-self-besieged-error: '&cYou can''t start a siege while being besieged!'
+command-siege-already-besieged: '&cThis faction is already besieged!'
+# <power> is replaced by the required power
+command-siege-power-error: '&cYou can''t siege this faction! It has more than &e<power> &cpower!'
+command-siege-grace-error: '&cYou can''t siege this faction! It is currently protected!'
+# <faction> is replaced by the name of the besieging faction
+command-siege-target-alert: '&cYour faction is getting sieged by faction &e<faction>&c! Protect your claims!'
+# <faction> is replaced by the name of the besieged faction
+command-siege-success: '&aSuccessfully started siege! You have now access in &e<faction>&a''s claims!'
+command-siege-player-error: '&cYou can not start a siege with this faction! There are not enough players online!'
+command-siege-ended: '&aThe siege has ended!'
+command-autoclaim-help: '&7Claims a chunk while walking through it'
+command-autoclaim-activated: '&aActivated &eautoclaiming'
+command-autoclaim-deactivated: '&cDeactivated &eautoclaiming'
+command-fill-help: '&7Fill any container with TNT out of your inventory'
+command-fill-level-error: '&cYour faction has not unlocked fill yet!'
+command-fill-activated: '&aRight-Click a container to fill it with TNT!'
+command-fill-deactivated: '&cDeactivated fill mode!'
+command-fill-success: '&aSuccessfully filled container!'
+command-player-info-help: '&7Shows information about the player'
+command-admin-help: '&7Opens the admin gui'
+# tooltips are short info messages that may help new players to understand the system of factions
+# these messages can be disabled in the settings.yml file
+tooltip-create-home: '&8(&c!&8) &cNow you should set your factions home with /f sethome'
+tooltip-upgrade-faction: '&8(&c!&8) &cYou can upgrade your faction with /f upgrade'
+tooltip-disband-faction: '&8(&c!&8) &cIf you want to leave, you should promote another player with /f promote or disband your faction with /f disband'
+tooltip-unignore-faction: '&8(&c!&8) &cYou can revoke the ignore with /f unignore <faction> or see all ignores at /f ignores'
+tooltip-revoke-relation-request: '&8(&c!&8) &cYou can revoke relation requests at the /f info (relations) gui!'
+tooltip-override-set-home: '&8(&c!&8) &cYou can override your faction home with /f sethome -f'
+tooltip-open-settings: '&8(&c!&8) &cYou should open the /f settings menu to make your factions profile unique!'
+rank-permission-chat: 'Chat'
+rank-permission-chat-description: 'Allows a player to chat in faction chat'
+rank-permission-build: 'Build'
+rank-permission-build-description: 'Allows a player to place blocks'
+rank-permission-break: 'Break'
+rank-permission-break-description: 'Allows a player to destroy blocks'
+rank-permission-open-doors: 'Open Doors'
+rank-permission-open-doors-description: 'Allows a player to open doors'
+rank-permission-open-chests: 'Open Chests'
+rank-permission-open-chests-description: 'Allows a player to open chests / trapped chests'
+rank-permission-open-enderchests: 'Open Enderchests'
+rank-permission-open-enderchests-description: 'Allows a player to open enderchests'
+rank-permission-home: 'Home'
+rank-permission-home-description: 'Allows a player to use /f home'
+rank-permission-set-home: 'Set Home'
+rank-permission-set-home-description: 'Allows a player to set the faction home'
+rank-permission-warp: 'Warp'
+rank-permission-warp-description: 'Allows a player to use /f warp'
+rank-permission-set-warp: 'Set Warp'
+rank-permission-set-warp-description: 'Allows a player to use /f setwarp'
+rank-permission-kick: 'Kick'
+rank-permission-kick-description: 'Allows a player to kick players out of the faction'
+rank-permission-invite: 'Invite'
+rank-permission-invite-description: 'Allows a player to invite other players to the faction'
+rank-permission-uninvite: 'Un-Invite'
+rank-permission-uninvite-description: 'Allows a player to manage faction invites and revoke invites'
+rank-permission-claim: 'Claim'
+rank-permission-claim-description: 'Allows a player to claim faction chunks'
+rank-permission-unclaim: 'Un-Claim'
+rank-permission-unclaim-dedescription: 'Allows a player to unclaim faction chunks'
+rank-permission-ally: 'Ally'
+rank-permission-ally-description: 'Allows a player to add another faction to your faction allies'
+rank-permission-truce: 'Truce'
+rank-permission-truce-description: 'Allows a player to add another faction to your faction truces'
+rank-permission-enemy: 'Enemy'
+rank-permission-enemy-description: 'Allows a player to add another faction to your faction enemies'
+rank-permission-neutral: 'Neutral'
+rank-permission-neutral-description: 'Allows a player to dissolve a relation between your and another faction'
+rank-permission-bank-deposit: 'Deposit'
+rank-permission-bank-deposit-description: 'Allows a player to deposit money into the faction bank'
+rank-permission-bank-withdraw: 'Withdraw'
+rank-permission-bank-withdraw-description: 'Allows a player to withdraw money from the faction bank'
+rank-permission-manage-roles: 'Manage Roles'
+rank-permission-manage-roles-description: 'Allows a player to create / delete faction ranks'
+rank-permission-fly: 'Fly'
+rank-permission-fly-description: 'Allows a player to use /f fly'
+rank-permission-fill: 'Fill'
+rank-permission-fill-description: 'Allows a player to use /f fill'
+rank-permission-change-info: 'Change Info'
+rank-permission-change-info-description: 'Allows a player to rename the faction and change the description'
+rank-permission-manage-quests: 'Manage Quests'
+rank-permission-manage-quests-description: 'Allows a player to start a quest'
+rank-permission-claim-quests: 'Claim Quests'
+rank-permission-claim-quests-description: 'Allows a player to claim quest rewards'
+rank-permission-manage-warps: 'Manage Warps'
+rank-permission-manage-warps-description: 'Allows a player to set, edit and delete warps'
+rank-permission-disband: 'Disband'
+rank-permission-disband-description: 'Allows a player to disband your faction'
+rank-permission-use-dispenser: 'Use Dispenser'
+rank-permission-use-dispenser-description: 'Allows a player to open dispenser'
+rank-permission-use-dropper: 'Use Dispenser'
+rank-permission-use-dropper-description: 'Allows a player to open droppers'
+rank-permission-use-hopper: 'Use Hopper'
+rank-permission-use-hopper-description: 'Allows a player to open hoppers'
+rank-permission-use-fence-gate: 'Use fence gate'
+rank-permission-use-fence-gate-description: 'Allows a player to open fence gates'
+rank-permission-fill-bucket: 'Fill Bucket'
+rank-permission-fill-bucket-description: 'Allows a player to fill buckets'
+rank-permission-empty-bucket: 'Empty Bucket'
+rank-permission-empty-bucket-description: 'Allows a player to Empty buckets'
+rank-permission-siege: 'Siege'
+rank-permission-siege-description: 'Allows a player to start a siege'
+rank-permission-faction-chest: 'Faction Chest'
+rank-permission-faction-chest-description: 'Allows a player to open the faction chest'
+rank-permission-upgrade: 'Upgrade'
+rank-permission-upgrade-description: 'Allows a player to upgrade the faction'
+rank-permission-open-furnaces: 'Open Furnace'
+rank-permission-open-furnaces-description: 'Allows a player to open furnaces'
+rank-permission-use-item-frames: 'Use Itemframes'
+rank-permission-use-item-frames-description: 'Allows a player to use itemframes'
+rank-permission-use-armor-stands: 'Use Armorstands'
+rank-permission-use-armor-stands-description: 'Allows a player to use armorstands'
+relation-permission-build: 'Build'
+relation-permission-build-description: 'Allows a player to place blocks'
+relation-permission-break: 'Break'
+relation-permission-break-description: 'Allows a player to destroy blocks'
+relation-permission-open-door: 'Open Doors'
+relation-permission-open-door-description: 'Allows a player to open doors'
+relation-permission-open-chest: 'Open Chests'
+relation-permission-open-chest-description: 'Allows a player to open chests / trapped chests'
+relation-permission-open-ender-chest: 'Open Enderchests'
+relation-permission-open-ender-chest-description: 'Allows a player to open enderchests'
+relation-permission-use-dispenser: 'Use Dispenser'
+relation-permission-use-dispenser-description: 'Allows a player to open dispenser'
+relation-permission-use-dropper: 'Use Dispenser'
+relation-permission-use-dropper-description: 'Allows a player to open droppers'
+relation-permission-use-hopper: 'Use Hopper'
+relation-permission-use-hopper-description: 'Allows a player to open hoppers'
+relation-permission-use-fence-gate: 'Use fence gate'
+relation-permission-use-fence-gate-description: 'Allows a player to open fence gates'
+relation-permission-fill-bucket: 'Fill Bucket'
+relation-permission-fill-bucket-description: 'Allows a player to fill buckets'
+relation-permission-empty-bucket: 'Empty Bucket'
+relation-permission-empty-bucket-description: 'Allows a player to empty buckets'
+relation-permission-use-buttons: 'Use Buttons'
+relation-permission-use-buttons-description: 'Allows a player to use buttons'
+relation-permission-use-lever: 'Use Levers'
+relation-permission-use-lever-description: 'Allows a player to use levers'
+relation-permission-use-trapdoor: 'Use Trapdoor'
+relation-permission-use-trapdoor-description: 'Allows a player to use trapdoors'
+rank-leader: 'Leader'
+rank-leader-prefix: '&4Leader'
+rank-member: 'Member'
+rank-member-prefix: '&9Member'
+rank-newbie: 'Newbie'
+rank-newbie-prefix: '&eNewbie'
+gui-confirm: '&aConfirm'
+gui-cancel: '&cCancel'
+gui-next: '&eNext'
+gui-previous: '&ePrevious'
+gui-back: '&eBack'
+gui-confirmation-title: 'Confirm'
+gui-enabled: '&aenabled'
+gui-disabled: '&cdisabled'
+gui-enter-message: 'Enter...'
+gui-save: '&aSave'
+gui-disband-description-title: '&eConfirm Disband'
+# multiple lines with '%n'
+gui-disband-description-description: 'Click to disband your faction%nIf you disband your faction%nAny progress will be reset!'
+gui-ignores-title: '&8Ignored Factions'
+# <faction> is replaced by the name of the faction
+gui-ignores-item-title: '&e<faction>'
+# multiple lines with '%n'
+# <description> is replaced by the description of the faction
+gui-ignores-item-description: '&6Description:%n&7<description>%n&7%n&7- click to revoke ignore -'
+gui-info-title: '&8Faction Info'
+gui-info-info-title: '&eInfo'
+# multiple lines with '%n'
+# <faction> is replaced by the name of the faction
+# <description> is replaced by the description of the faction
+# <level> is replaced by the level of the faction
+# <claims> is replaced by the claim count of the faction
+# <maxclaims> is replaced by the maximum amount of claims the faction can own
+# <players> is replaced by the player count of the faction
+# <maxplayers> is replaced by the maximum amount of players the faction can have
+# <power> is replaced by the current power of the faction
+# <maxpower> is replaced by the maximum power the faction can have
+gui-info-info-description: '&7%n&6Name: &f<faction>%n&6Description: &f<description>%n&6Level: &f<level>%n&6Claims: &f<claims>&7/&a<maxclaims>%n&6Players: &f<players>&7/&a<maxplayers>%n&6Power: &f<power>&7/&a<maxpower>'
+gui-info-players-title: '&ePlayers'
+# multiple lines with '%n'
+gui-info-players-description: '&7Shows all faction members%n&7%n&7- click to open -'
+gui-info-bank-title: '&eBank'
+# multiple lines with '%n'
+gui-info-bank-description: '&7Shows your factions bank account%n&7%n&7- click to show -'
+gui-info-ranks-title: '&eRanks'
+# multiple lines with '%n'
+gui-info-ranks-description: '&7Shows your factions ranks%n&7%n&7&7- click to open -'
+gui-info-relations-title: '&eRelations'
+# multiple lines with '%n'
+gui-info-relations-description: '&7Shows your factions relations%n&7%n&7&7- click to open -'
+gui-info-invites-title: '&eInvites'
+# multiple lines with '%n'
+gui-info-invites-description: '&7Shows your factions sent invites%n&7%n&7&7- click to open -'
+gui-info-chest-title: '&eChest'
+# multiple lines with '%n'
+gui-info-chest-description: '&7Shows your factions chest%n&7%n&7&7- click to open -'
+gui-info-warps-title: '&eWarps'
+# multiple lines with '%n'
+gui-info-warps-description: '&7Shows your factions warps%n&7%n&7&7- click to open -'
+gui-info-quests-title: '&eQuests'
+# multiple lines with '%n'
+gui-info-quests-description: '&7Shows your factions quests%n&7%n&7&7- click to open -'
+gui-players-title: '&8Faction Players'
+# <player> is replaced by the name of the player
+# <state> is replaced by "gui-players-item-online" or "gui-players-item-offline"
+gui-players-item-title: '&e<player> &8(<state>&8)'
+gui-players-item-online: '&aonline'
+gui-players-item-offline: '&coffline'
+# multiple lines with '%n'
+# <rank> is replaced by the name of the rank
+gui-players-item-description: '&6Rank: &f<rank>'
+gui-ranks-title: '&8Faction ranks'
+# <rank> is replaced by the name of the rank
+gui-ranks-item-title: '&f<rank>'
+# multiple lines with '%n'
+# <prefix> is replaced by the prefix of the rank
+gui-ranks-item-description: '&6Prefix: <prefix>'
+gui-ranks-create-rank-title: '&eCreate Rank'
+gui-settings-title: '&8Faction Settings'
+# <state> is replaced by the public state of the faction
+gui-settings-public-title: '&ePublic: <state>'
+gui-settings-public-state-true: '&atrue'
+gui-settings-public-state-false: '&cfalse'
+# multiple lines with '%n'
+gui-settings-public-description: '&7If your faction is public, everyone%n&7can join without any invites'
+# <name> is replaced by the name of the faction
+gui-settings-name-title: '&eName: &f<name>'
+# multiple lines with '%n'
+gui-settings-name-description: '%n&7- click to change the name -'
+# <description> is replaced by the description of the faction
+gui-settings-description-title: '&eDescription: &f<description>'
+# multiple lines with '%n'
+gui-settings-description-description: '%n&7- click to change the description -'
+gui-settings-icon-title: '&eChoose a faction icon'
+gui-settings-icon-saved: '&aSaved icon!'
+# multiple lines with '%n'
+gui-settings-icon-description: '%n&7- click to change the icon -'
+gui-invites-title: '&8Faction Invites'
+# <target> is replaced by the name of the target player
+gui-invites-item-title: '&e<target>'
+# multiple lines with '%n'
+# <sender> is replaced by the player who has sent the invite
+# <time> is replaced by the time the invite was sent
+gui-invites-item-description: '&6Sender: &f<sender>%n&6<time>'
+gui-warps-title: '&8Faction warps'
+# <warp> is replaced by the name of the warp
+gui-warps-item-title: '&e<warp>'
+# multiple lines with '%n'
+# <world> is replaced by the name of the world
+# <x> is replaced by x-coordinate
+# <y> is replaced by y-coordinate
+# <z> is replaced by z-coordinate
+gui-warps-item-description: '%n&6x: &f<x>%n&6y: &f<y>%n&6z: &f<z>%n&7- Click to teleport -'
+# multiple lines with '%n'
+# <world> is replaced by the name of the world
+# <x> is replaced by x-coordinate
+# <y> is replaced by y-coordinate
+# <z> is replaced by z-coordinate
+gui-warps-item-description-admin: '%n&6x: &f<x>%n&6y: &f<y>%n&6z: &f<z>%n&7- Left-click to teleport -%n&7- Right-click to edit -'
+# <warp> is replaced by the name of the warp
+gui-warp-title: 'Warp: <warp>'
+# <warp> is replaced by the name of the warp
+gui-warp-info-title: '&e<warp>'
+# multiple lines with '%n'
+# <world> is replaced by the name of the world
+# <x> is replaced by x-coordinate
+# <y> is replaced by y-coordinate
+# <z> is replaced by z-coordinate
+gui-warp-info-description: '%n&6x: &f<x>%n&6y: &f<y>%n&6z: &f<z>%n&7- Left-click to teleport -%n&7- Right-click to rename -'
+gui-warp-enter-name: 'Enter new name'
+gui-warp-enter-password: 'Enter password'
+gui-warp-set-password-title: '&eSet Password'
+# multiple lines with '%n'
+gui-warp-set-password-description: '%n&7- Click to set password -'
+# <password> is replaced by the obscured password
+gui-warp-change-password-title: '&ePassword: &f<password>'
+# multiple lines with '%n'
+# <password> is replaced by the obscured password
+gui-warp-change-password-description: '%n&7- Left-click to set password -%n&7- Right-click to remove password -'
+gui-warp-remove-title: '&eRemove Warp'
+# multiple lines with '%n'
+gui-warp-remove-description: '%n&7- Click to remove warp -'
+gui-warp-remove-confirmation-title: '&eClick to confirm removing'
+# <warp> is replaced by the name of the warp
+gui-warp-remove-success: '&aSuccessfully removed warp &e<warp>'
+gui-create-rank-title: '&8Rank Management'
+gui-create-rank-icon-title: '&eSet Rank Icon'
+# multiple lines with '%n'
+gui-create-rank-icon-description: '&7Opens a GUI mirrored from your inventory%n&7where you can choose an item%n&7that is used for the ranks icon'
+gui-create-rank-set-name: '&eSet Name'
+# <name> is replaced by the name of the rank
+gui-create-rank-change-name: '&eName: &f<name>'
+# multiple lines with '%n'
+gui-create-rank-set-name-description: '&7Set the ranks name'
+gui-create-rank-set-prefix: '&eSet Prefix'
+# <prefix> is replaced by the prefix of the rank
+gui-create-rank-change-prefix: '&ePrefix: &f<prefix>'
+# multiple lines with '%n'
+gui-create-rank-set-prefix-description: '&7Set the ranks prefix that will be displayed%n&cColorCodes &7are &a&nsupported'
+gui-create-rank-set-permissions: '&eSet permissions'
+# multiple lines with '%n'
+# <permission> is replaced by the name of the permission
+gui-create-rank-set-permissions-description: '&8- &7<permission>'
+gui-create-rank-edited-success: '&aSuccessfully edited rank!'
+gui-create-rank-success: '&aSuccessfully created rank!'
+gui-create-rank-name-null: '&cName can''t be null!'
+gui-create-rank-prefix-null: '&cPrefix can''t be null!'
+gui-create-rank-rank-exists: '&cThis rank does already exists!'
+gui-create-rank-delete-title: '&cDelete rank'
+gui-create-rank-delete-lore: '&7Click to delete the rank'
+gui-create-rank-delete-success: '&aSuccessfully deleted rank &e<rank>&a!'
+gui-permissions-title: '&8Permissions'
+gui-setrank-title: '&8Set Rank'
+gui-setrank-item-title: '&eConfirm Set-Rank'
+# multiple lines with '%n'
+gui-setrank-item-description: '&7Click to confirm the new rank'
+gui-setrank-leader-error: '&cYou can''t set the leader rank! You have to promote the player manually!'
+gui-relations-title: '&8Relations'
+gui-relations-ally-item-title: '&eAllies'
+# multiple lines with '%n'
+gui-relations-ally-item-description: '%n&7- click to open -'
+gui-relations-enemy-item-title: '&eEnemies'
+# multiple lines with '%n'
+gui-relations-enemy-item-description: '%n&7- click to open -'
+gui-relations-truce-item-title: '&eTruces'
+gui-relations-sent-requests-item-title: '&eSent requests'
+# multiple lines with '%n'
+gui-relations-sent-requests-item-description: '%n&7- click to open -'
+gui-relations-received-requests-item-title: '&eReceived requests'
+# multiple lines with '%n'
+gui-relations-received-requests-item-description: '%n&7- click to open -'
+gui-relations-revoke-request-confirmation-title: '&eClick to revoke request'
+gui-relations-revoke-success: '&aSuccessfully revoked request!'
+# multiple lines with '%n'
+gui-relations-truce-item-description: '%n&7- click to open -'
+gui-allies-title: '&8Faction Allies'
+# <faction> is replaced by the name of the faction
+gui-allies-item-title: '&e<faction>'
+# multiple lines with '%n'
+gui-allies-item-description: '&7- Click to open -'
+gui-allies-revoke-alliance-confirmation-title: '&eClick to confirm revoke alliance'
+gui-allies-revoke-success: '&aSuccessfully revoked alliance with &e<faction>'
+# <faction> is replaced by the name of the faction
+gui-allies-revoke-success-others: '&cYou''r alliance with &e<faction> &cgot revoked!'
+gui-truces-title: '&8Faction Truces'
+# <faction> is replaced by the name of the faction
+gui-truces-item-title: '&e<faction>'
+# multiple lines with '%n'
+gui-truces-item-description: '&7- Click to remove -'
+gui-truces-revoke-truce-confirmation-title: '&eClick to confirm revoke truce'
+# <faction> is replaced by the name of the faction
+gui-truces-revoke-success: '&aSuccessfully revoked truce relation with &e<faction>'
+gui-enemies-title: '&8Faction Enemies'
+# <faction> is replaced by the name of the faction
+gui-enemies-item-title: '&e<faction>'
+# multiple lines with '%n'
+gui-enemies-item-description: '&7- Click to remove -'
+gui-enemies-revoke-enemy-confirmation-title: '&eClick to confirm revoke enemy'
+# <faction> is replaced by the name of the faction
+gui-enemies-revoke-success: '&aSuccessfully revoked enemy relation with &e<faction>'
+gui-sent-requests-title: '&8Sent Requests'
+# <faction> is replaced by the name of the faction
+gui-sent-requests-item-title: '&e<faction>'
+# multiple lines with '%n'
+gui-sent-requests-item-description: '&7- Click to remove -'
+gui-sent-requests-remove-item-title: '&eRemove Relation Request'
+# multiple lines with '%n'
+# <type> is replaced by the type of the relation
+gui-sent-requests-remove-item-description: '&cType: &6<type>%n&7- click to remove request -'
+gui-received-requests-title: '&8Received Requests'
+# <faction> is replaced by the name of the faction
+gui-received-requests-item-title: '&e<faction>'
+# multiple lines with '%n'
+# <type> is replaced by the type of the relation
+gui-received-requests-item-description: '&cType: &6<type>%n&7- click to accept request -'
+gui-received-requests-accept-item-title: '&eAccept Relation Request'
+gui-relations-revoke-request-success: '&aSuccessfully revoked request!'
+# multiple lines with '%n'
+gui-received-requests-accept-item-description: '&7- Click to accept -'
+gui-list-title: '&8All Factions'
+# <faction> is replaced by the name of the faction
+gui-list-item-title: '&e<faction>'
+# multiple lines with '%n'
+# <description> is replaced by the description of the faction
+# <leader> is replaced by the leader of the faction
+gui-list-item-description: '&6Description: &f<description>%n&6Leader: &f<leader>%n&7%n&7- Click to view info -'
+gui-kick-confirm: '&eConfirm Kick Action'
+# <ally> is replaced by the name of the ally faction
+gui-edit-ally-title: '&8Edit Ally: <ally>'
+# <ally> is replaced by the name of the ally faction
+gui-edit-ally-info-title: '&e<ally>'
+# multiple lines with '%n'
+gui-edit-ally-info-description: '%n&7- Click to open info -'
+gui-edit-ally-remove-relation-title: '&eRemove Relation'
+# multiple lines with '%n'
+gui-edit-ally-remove-relation-description: '%n&7- Click to remove relation -'
+gui-edit-ally-permissions-title: '&eEdit Ally permissions'
+# <ally> is replaced by the name of the ally faction
+gui-edit-ally-success: '&aSuccessfully edited ally &e<ally>&a!'
+gui-relation-permissions-title: '&8Permissions'
+gui-neutral-item-title: '&eClick to confirm neutral faction'
+gui-upgrade-title: '&8Upgrade Faction'
+gui-upgrade-info-item-title: '&eUpgrade Information'
+# multiple lines with '%n'
+# <current> is replaced by the current level
+# <next> is replaced by the next level
+gui-upgrade-info-item-description: '&eCurrent: &c<current>     &6Next: &c<next>'
+gui-upgrade-upgrade-item-title: '&eClick to Upgrade'
+# multiple lines with '%n'
+gui-upgrade-upgrade-item-description: '&fCost: &e<cost>%n%n&7'
+gui-upgrade-success: '&aSuccessfully upgraded your faction!'
+gui-upgrade-maxed-item-title: '&cMaxed'
+gui-upgrade-maxed-item-description: '&7Your faction has reached the max level!%n&7There are no more levels to achieve!'
+gui-upgrade-upgrades-title: '&eUpgrades'
+gui-upgrade-upgrades-description: '&7Click to see the benefits of each upgrade'
+gui-upgrades-title: '&8Upgrade Benefits'
+# multiple lines with '%n'
+# <current> is replaced by the value of the current level
+# <next> is replaced by the value of the next level
+gui-upgrades-description: '%n&fCurrent     &8|     &fNext%n&c<current>     &8➔     &c<next>'
+gui-upgrades-fly-title: '&eFaction Fly'
+gui-upgrades-fill-title: '&eFaction Fill'
+gui-upgrades-players-title: '&eFaction Members'
+gui-upgrades-claims-title: '&eFaction Claims'
+gui-upgrades-teleport-title: '&eTeleport Delay'
+gui-upgrades-quests-title: '&eMax Active Quests'
+gui-upgrades-warps-title: '&eMax Warps'
+gui-upgrades-effects-title: '&eClaim Effects'
+gui-upgrades-chest-title: '&eFaction Chest Size'
+gui-languages-title: '&8Languages'
+# <language> is replaced by the name of the language
+gui-languages-item-title: '&e<language>'
+# multiple lines with '%n'
+# <language> is replaced by the name of the language
+gui-languages-item-description: '&7- Click to select -'
+# multiple lines with '%n'
+# <language> is replaced by the name of the language
+gui-languages-item-selected-description: '&7- selected -'
+gui-player-info-title: '&8Player Info'
+gui-player-info-faction-title: '&eFaction'
+# <faction> is replaced by the name of the player´s faction
+gui-player-info-faction-description: '&fFaction &8➔ &a<faction>'
+gui-player-info-deaths-title: '&eDeaths'
+# <deaths> is replaced by the deaths of the player
+gui-player-info-deaths-description: '&fDeaths &8➔ &a<deaths>'
+gui-player-info-kills-title: '&eKills'
+# <kills> is replaced by the kills of the player
+gui-player-info-kills-description: '&fKills &8➔ &a<kills>'
+gui-player-info-last-login-title: '&eLast Login'
+# <time> is replaced by the last login time
+gui-player-info-last-login-description: '&fLast Login &8➔ &a<time>'
+gui-player-info-no-faction: '&cnone'
+gui-player-info-never-seen: '&cNever seen'
+gui-create-quest-title: '&8Create Quest'
+gui-create-quest-quest-name-title: '&eQuest name'
+gui-create-quest-quest-name-default: 'Enter quest name'
+# multiple lines with '%n'
+gui-create-quest-quest-name-lore: '&7Choose an awesome name for your quest!%n&7Example: "WobbleGobble3000"'
+gui-create-quest-quest-tasks-title: '&eQuest Tasks'
+# multiple lines with '%n'
+gui-create-quest-quest-tasks-lore: '&7Choose multiple tasks for your quest!%n&7Example: Craft an end rod'
+gui-create-quest-quest-reward-title: '&eQuest Reward'
+# multiple lines with '%n'
+gui-create-quest-quest-reward-lore: '&7Choose a big reward for your quest!%n&7Example: $300 + 1 Beacon'
+gui-tasks-title: '&8Quest Tasks'
+gui-admin-title: '&8UltimateFactions Admin Menu'
+gui-admin-toggle-permissions: '&eToggle bypass-permission'
+# multiple lines with '%n'
+# <status> is replaced by the current status of the permission bypass
+# statuses are 'enabled' and 'disabled'
+gui-admin-toggle-permissions-lore: '&7enables: %n&8-&7 faction territory interactions%n&8- &7faction teleport bypass%n%n&7Current status: &f%n<status>'
+gui-admin-toggle-permissions-enabled: '&aEnabled faction bypass mode'
+gui-admin-toggle-permissions-disabled: '&cDisabled faction bypass mode'
+gui-admin-factions-item-title: '&eFactions'
+gui-admin-factions-item-lore: '&7Click to view all factions'
+gui-admin-factions-title: '&8All Factions'
+# <faction> is replaced by the name of the faction
+gui-admin-factions-faction-item-title: '&e<faction>'
+gui-admin-factions-faction-item-lore: '&7click to manage this faction'
+gui-admin-manage-factions-title: '&8Manage Faction'
+# <faction> is replaced by the factions name
+gui-admin-manage-factions-name-item-title: '&e<faction>'
+gui-admin-manage-factions-name-item-lore: '&7- click to change name -'
+# <description> is replaced by the factions description
+gui-admin-manage-factions-description-item-title: '&e<description>'
+gui-admin-manage-factions-description-item-lore: '&7- click to change description -'
+gui-admin-manage-factions-warps-item-title: '&eWarps'
+gui-admin-manage-factions-warps-item-lore: '&7- click to open menu -'
+gui-admin-manage-factions-chest-item-title: '&eChest'
+gui-admin-manage-factions-chest-item-lore: '&7- click to open menu -'
+# multiple lines with '%n'
+# <description> is replaced by the description of the faction
+# <leader> is replaced by the leader of the faction
+gui-admin-factions-list-faction-item-lore: '&6Description: &f<description>%n&6Leader: &f<leader>%n&7%n&7- Click to manage faction -'
+# <faction> is replaced by the factions name
+gui-admin-rename-faction-success: '&aSuccessfully renamed faction to &e<faction>'
+# <faction> is replaced by the factions name
+# <description> is replaced by the description of the faction
+gui-admin-description-change-success: '&aSuccessfully changed description of faction &e<faction> &ato &e<description>'
+gui-admin-no-chest-item-title: '&cFaction Chest'
+gui-admin-no-chest-item-lore: '&cThis faction has not unlocked the faction chest!'
+gui-admin-delete-item-title: '&4Delete Faction'
+gui-admin-delete-item-lore: '&7- click to delete faction -'
+gui-admin-delete-confirm-item-title: '&cThis faction will be disbanded'
+gui-admin-delete-confirm-item-lore: '&7- confirm your action -'
+gui-admin-set-leader-item-title: '&eSet Leader'
+gui-admin-set-leader-item-lore: '&7- click to set a new faction leader -'
+
+# <faction> is replaced by the factions name
+# <description> is replaced by the factions description
+territory-enter-title: '&aEntered territory of &e<faction>'
+territory-enter-subtitle: '&e<description>'
+# <zone> is replaced by the zones name
+zone-enter-title: '&aEntered zone'
+zone-enter-subtitle: '&e<zone>'
+territory-left-title: '&cLeft factions territory'
+territory-left-subtitle: '&eYou are back in wilderness now!'
+zone-left-title: '&aLeft zone'
+zone-left-subtitle: '&eYou are back in wilderness now!'
+
+# multiple lines with '%n'
+# <players> is replaced by the current player count
+tablist-header: '&5&lThis is a &e&lHeader%n&9Edit everything!'
+# multiple lines with '%n'
+# <players> is replaced by the current player count
+tablist-footer: '&5&lThis is a &e&lFooter%n&9Online: &e<players>'
+scoreboard-faction-header: '&b&lUltimateFactions'
+# multiple lines with '%n'
+# <faction> is replaced by the name of the faction who owns the chunk
+# <description> is replaced by the description of the faction
+# <x> is replaced by the chunks x-coordinate
+# <z> is replaced by the chunks z-coordinate
+# <players> is replaced by the current player count
+scoreboard-faction: '%n&6&l| &eFaction: &a<faction>%n&6&l| &e<description>%n%n&6&l| &eChunk &a<x>&8;&a<z>%n%n&6Join our discord!%n&6discord.gg/4dgT7Pz'
+scoreboard-wilderness-header: '&b&lUltimateFactions'
+# multiple lines with '%n'
+# <x> is replaced by the chunks x-coordinate
+# <z> is replaced by the chunks z-coordinate
+# <players> is replaced by the current player count
+scoreboard-wilderness: '%n&6&l| &aWilderness%n&6&l| &cPvP activated%n%n&6&l| &eChunk &a<x>&8;&a<z>%n%n&6Join our discord!%n&6discord.gg/4dgT7Pz'
+scoreboard-safe-zone-header: '&b&lUltimateFactions'
+# multiple lines with '%n'
+# <x> is replaced by the chunks x-coordinate
+# <z> is replaced by the chunks z-coordinate
+# <players> is replaced by the current player count
+scoreboard-safe-zone: '%n&6&l| &aSafe Zone%n&6&l| &cPvP deactivated%n%n&6&l| &eChunk &a<x>&8;&a<z>%n%n&6Join our discord!%n&6discord.gg/4dgT7Pz'
+scoreboard-war-zone-header: '&b&lUltimateFactions'
+# multiple lines with '%n'
+# <x> is replaced by the chunks x-coordinate
+# <z> is replaced by the chunks z-coordinate
+# <players> is replaced by the current player count
+scoreboard-war-zone: '%n&6&l| &cWar Zone%n&6&l| &cPvP activated%n%n&6&l| &eChunk &a<x>&8;&a<z>%n%n&6Join our discord!%n&6discord.gg/4dgT7Pz'

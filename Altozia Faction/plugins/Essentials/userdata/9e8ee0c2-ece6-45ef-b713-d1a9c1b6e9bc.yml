@@ -1,0 +1,30 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.0.0.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1662311560524
+  login: 1662311484038
+money: '0'
+last-account-name: AzmogExe
+logoutlocation:
+  world: 413758c8-4761-4d23-85eb-2b9c7dfd4565
+  world-name: world
+  x: -56.5
+  y: 78.0
+  z: 141.5
+  yaw: 50.700016021728516
+  pitch: 21.14999771118164
